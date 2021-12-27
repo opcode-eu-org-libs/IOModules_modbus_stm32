@@ -1,0 +1,4 @@
+(component-library "../submodules" "project dir")
+(component-library-search "../submodules")
+(source-library  "../submodules")
+(source-library-search "../submodules")

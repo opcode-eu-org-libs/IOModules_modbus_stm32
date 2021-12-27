@@ -1,0 +1,15 @@
+(hierarchy-traversal "enabled")
+
+(hierarchy-uref-mangle "enabled")
+(hierarchy-uref-order "append")
+(hierarchy-uref-separator "")
+
+(hierarchy-netname-mangle "enabled")
+(hierarchy-netname-order "append")
+(hierarchy-netname-separator "_")
+
+(hierarchy-netattrib-mangle "enabled")
+(hierarchy-netattrib-order "append")
+(hierarchy-netattrib-separator "_")
+
+(net-naming-priority "netattrib")

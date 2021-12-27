@@ -1,0 +1,759 @@
+v 20130925 2
+C 64600 56100 1 0 0 RS485_transceiver.sym
+{
+T 65900 59100 5 10 0 0 0 0 1
+footprint=so(8)
+T 65000 58800 5 10 1 1 0 0 1
+refdes=U4.1
+T 66100 56400 5 10 1 1 180 6 1
+value=ST*485
+}
+N 64700 57800 63800 57800 4
+{
+T 64000 57800 5 10 1 1 0 0 1
+netname=nRE2
+}
+N 63800 57400 64700 57400 4
+{
+T 64000 57400 5 10 1 1 0 0 1
+netname=DE2
+}
+C 57700 50400 1 270 1 capacitor-1.sym
+{
+T 57700 50400 5 10 0 0 0 6 1
+footprint=acy(120.00mil, type=block, pin_flags=none, pol=none)
+T 58600 50600 5 10 0 0 90 2 1
+symversion=0.1
+T 58200 51100 5 10 1 1 180 0 1
+refdes=C4
+T 57800 50700 5 10 1 1 180 0 1
+value=100n
+}
+N 57900 51300 57900 51400 4
+N 57900 50400 57900 50300 4
+N 66700 57400 68000 57400 4
+{
+T 67800 57600 5 10 1 1 180 0 1
+netname=RS485_A
+}
+N 66700 57800 68000 57800 4
+{
+T 67800 58000 5 10 1 1 180 0 1
+netname=RS485_B
+}
+N 54900 51000 55800 51000 4
+{
+T 55800 51200 5 10 1 1 180 0 1
+netname=RS485_B
+}
+N 54900 50600 55800 50600 4
+{
+T 55800 50800 5 10 1 1 180 0 1
+netname=RS485_A
+}
+N 64700 57000 63800 57000 4
+{
+T 64000 57000 5 10 1 1 0 0 1
+netname=TxD2
+}
+N 64700 58200 63800 58200 4
+{
+T 64000 58200 5 10 1 1 0 0 1
+netname=RxD2
+}
+C 59300 56100 1 0 0 RS485_transceiver.sym
+{
+T 60600 59100 5 10 0 0 0 0 1
+footprint=dip(8, pin_ringdia=75.00mil)
+T 59700 58800 5 10 1 1 0 0 1
+refdes=U4
+T 60800 56400 5 10 1 1 180 6 1
+value=ST*485
+}
+N 58500 57400 59400 57400 4
+{
+T 58700 57400 5 10 1 1 0 0 1
+netname=DE2
+}
+N 61400 57400 62700 57400 4
+{
+T 62500 57600 5 10 1 1 180 0 1
+netname=RS485_A
+}
+N 61400 57800 62700 57800 4
+{
+T 62500 58000 5 10 1 1 180 0 1
+netname=RS485_B
+}
+N 38400 57200 39700 57200 4
+N 39700 57200 39700 57100 4
+N 39700 58400 39700 58500 4
+N 38400 58400 39700 58400 4
+N 55800 50200 55700 50200 4
+N 55700 50200 55700 50000 4
+C 42500 52400 1 0 1 transoptor-diode-transistor-4.sym
+{
+T 42500 52400 5 10 0 0 0 6 1
+numslots=1
+T 42500 52400 5 10 0 0 0 6 1
+slot=1
+T 42500 52400 5 10 0 0 0 6 1
+footprint=dip(4)
+T 41400 53900 5 10 1 1 0 6 1
+refdes=U1
+T 40700 52900 5 10 1 1 0 4 1
+value=EL817
+}
+C 41700 53100 1 180 1 resistor-2.sym
+{
+T 41700 53100 5 10 0 0 0 2 1
+footprint=acy(130.00mil, pin_flags=none, type=standing)
+T 42000 52700 5 10 1 1 0 0 1
+refdes=R4
+T 42300 53300 5 10 1 1 0 8 1
+value=1k
+}
+N 41700 53000 41600 53000 4
+N 39800 53000 39700 53000 4
+N 39700 53000 39700 52900 4
+C 39200 54600 1 270 0 resistor-2.sym
+{
+T 39200 54600 5 10 0 0 90 8 1
+footprint=acy(100.00mil, pin_flags=none, type=standing)
+T 39600 54300 5 10 1 1 90 6 1
+refdes=R1
+T 39000 54000 5 10 1 1 90 2 1
+value=22k
+}
+N 39300 53700 39300 53600 4
+C 38900 49500 1 0 0 transoptor-diode-transistor-4.sym
+{
+T 38900 49500 5 10 0 0 0 0 1
+numslots=1
+T 38900 49500 5 10 0 0 0 0 1
+slot=1
+T 38900 49500 5 10 0 0 0 0 1
+footprint=dip(4)
+T 39900 51000 5 10 1 1 0 0 1
+refdes=U2
+T 40700 50000 5 10 1 1 0 4 1
+value=EL817
+}
+C 39700 50200 1 180 0 resistor-2.sym
+{
+T 39700 50200 5 10 0 0 0 8 1
+footprint=acy(100.00mil, pin_flags=none, type=standing)
+T 39400 49800 5 10 1 1 0 6 1
+refdes=R2
+T 39100 50400 5 10 1 1 0 2 1
+value=1k
+}
+N 39700 50100 39800 50100 4
+N 41600 50100 41700 50100 4
+N 41700 50100 41700 50000 4
+C 44900 53000 1 0 0 transoptor-diode-transistor-4.sym
+{
+T 44900 53000 5 10 0 0 0 0 1
+numslots=1
+T 44900 53000 5 10 0 0 0 0 1
+slot=1
+T 44900 53000 5 10 0 0 0 0 1
+footprint=dip(4)
+T 46000 54500 5 10 1 1 0 0 1
+refdes=U3
+T 46700 53500 5 10 1 1 0 4 1
+value=EL817
+}
+C 45700 53700 1 180 0 resistor-2.sym
+{
+T 45700 53700 5 10 0 0 0 8 1
+footprint=acy(265.00mil, dia=50mil, pin_flags=none, type=endcap)
+T 45400 53300 5 10 1 1 0 6 1
+refdes=R3
+T 45100 53900 5 10 1 1 0 2 1
+value=1k
+}
+N 45700 53600 45800 53600 4
+N 47600 53600 47700 53600 4
+N 47700 53600 47700 53500 4
+N 47600 54200 49200 54200 4
+{
+T 49100 54200 5 10 1 1 0 6 1
+netname=DE2
+}
+C 48000 55200 1 270 0 resistor-2.sym
+{
+T 48000 55200 5 10 0 0 90 8 1
+footprint=acy(110.00mil, pin_flags=none, type=standing)
+T 48400 54900 5 10 1 1 90 6 1
+refdes=R6
+T 47800 54600 5 10 1 1 90 2 1
+value=22k
+}
+N 48100 54300 48100 54200 4
+N 38300 53600 39800 53600 4
+{
+T 38400 53600 5 10 1 1 0 0 1
+netname=RxD1
+}
+N 45700 54300 45700 54200 4
+N 45700 54200 45800 54200 4
+N 37900 50100 38800 50100 4
+{
+T 38000 50100 5 10 1 1 0 0 1
+netname=TxD1
+}
+N 39700 50800 39700 50700 4
+N 39700 50700 39800 50700 4
+N 41600 53600 41700 53600 4
+N 41700 53600 41700 53700 4
+T 46100 56700 9 8 1 0 0 0 5
+'RTS' LOW indicates that the USART
+in uC is ready to receive data,
+
+so we set 'DE' to LOW to enable
+reciver and disable transimter
+N 43200 53000 42600 53000 4
+{
+T 43100 53000 5 10 1 1 0 6 1
+netname=RxD2
+}
+N 43200 50700 41600 50700 4
+{
+T 43100 50700 5 10 1 1 0 6 1
+netname=TxD2
+}
+C 42000 51700 1 270 0 resistor-2.sym
+{
+T 42000 51700 5 10 0 0 90 8 1
+footprint=acy(110.00mil, pin_flags=none, type=standing)
+T 42400 51400 5 10 1 1 90 6 1
+refdes=R5
+T 41800 51100 5 10 1 1 90 2 1
+value=22k
+}
+N 42100 50800 42100 50700 4
+C 55800 49700 1 0 1 net-gnd-1.sym
+{
+T 55600 49950 5 5 0 0 0 6 1
+net=GND2:1
+T 55600 49900 5 5 1 1 180 0 1
+value=GND2
+}
+C 60300 55900 1 0 0 net-gnd-1.sym
+{
+T 60500 56150 5 5 0 0 0 0 1
+net=GND2:1
+T 60500 56100 5 5 1 1 180 6 1
+value=GND2
+}
+C 60200 59000 1 0 0 net-pwr-2.sym
+{
+T 60450 59100 5 5 0 0 0 0 1
+net=Vcc2:1
+T 60500 59250 5 9 1 1 0 1 1
+value=Vcc2
+}
+C 55700 49700 1 0 0 connector_1x4.sym
+{
+T 56600 50500 5 10 1 1 270 6 1
+refdes=CONN2
+T 56100 52100 5 10 0 0 0 0 1
+footprint=tb(4, mark=0, step=3.5mm, pin_ringdia=100.00mil, sideOffset=2.25mm, frontOffset=250mil, backOffset=55mil)
+}
+N 55800 51400 55700 51400 4
+N 55700 51400 55700 51600 4
+T 46700 50600 9 10 1 0 0 0 11
+Optional optoisolation of RS485.
+
+For non-isolated module:
+  - do not install: U1, U2, U3, R1, R2, R3, R4, R5, R6
+  - connect:
+     - R4-2 and U3-4  (RTS)
+     - U1-4 and R3-2  (RxD)
+     - R1-2 and U2-4  (TxD)
+     - U1-3 and U2-3  (GND)
+     - U3-1 and U1-1  (Vcc)
+
+T 59500 55100 9 10 1 0 0 0 3
+THT DIP8 variants for U4:
+  SN75176A   for Vcc1 = 5V
+  MAX3485    for Vcc = 3.3V
+T 64800 55100 9 10 1 0 0 0 3
+SMD SO8 variants for U4:
+  ST485   for Vcc1 = 5V
+  ST3485 for Vcc = 3.3V
+N 42800 58300 42700 58300 4
+N 42700 58300 42700 57900 4
+N 42400 57900 42800 57900 4
+C 42600 58000 1 0 1 net-pwr-2.sym
+{
+T 42350 58100 5 5 0 0 0 6 1
+net=Vcc1:1
+T 42300 58250 5 9 1 1 0 7 1
+value=Vcc1
+}
+C 46600 58500 1 0 0 jumper-3pin-2.sym
+{
+T 46900 58475 5 8 1 1 0 2 1
+refdes=J9
+T 46900 59800 5 10 0 0 0 0 1
+footprint=connector(1, 3, silkmark=none)
+}
+N 45600 58700 46600 58700 4
+C 42700 57100 1 0 0 74xx123-2.sym
+{
+T 45000 59200 5 10 1 1 0 0 1
+refdes=U9
+T 43100 59200 5 10 1 1 0 0 1
+value=74HC123
+T 43100 59400 5 10 0 0 0 0 1
+footprint=dip(16)
+T 43100 61000 5 10 0 0 0 0 1
+net=Vcc1:16
+T 43100 61200 5 10 0 0 0 0 1
+net=GND1:8
+}
+C 43700 56600 1 0 0 capacitor-1.sym
+{
+T 43900 57300 5 10 0 0 0 0 1
+device=CAPACITOR
+T 44300 56900 5 10 1 1 0 0 1
+refdes=C9
+T 43900 57500 5 10 0 0 0 0 1
+symversion=0.1
+T 43700 56600 5 10 0 0 0 0 1
+footprint=acy(120.00mil, type=block, pin_flags=none, pol=none)
+}
+N 43600 57200 43600 56800 4
+N 43600 56800 43700 56800 4
+N 44600 56800 44800 56800 4
+N 44800 56600 44800 57200 4
+C 44700 56300 1 0 0 net-gnd-1.sym
+{
+T 44900 56550 5 5 0 0 0 0 1
+net=GND1:1
+T 44500 56500 5 5 1 1 180 6 1
+value=GND1
+}
+N 41500 58700 42800 58700 4
+{
+T 41600 58700 5 10 1 1 0 0 1
+netname=TxD1
+}
+N 45700 59300 46600 59300 4
+{
+T 45800 59300 5 10 1 1 0 0 1
+netname=RTS1
+}
+N 47900 59000 47200 59000 4
+{
+T 47500 59000 5 10 1 1 0 0 1
+netname=DE1
+}
+N 59400 58200 58500 58200 4
+{
+T 58700 58200 5 10 1 1 0 0 1
+netname=RxD2
+}
+N 59400 57000 58500 57000 4
+{
+T 58700 57000 5 10 1 1 0 0 1
+netname=TxD2
+}
+C 65500 59000 1 0 0 net-pwr-2.sym
+{
+T 65750 59100 5 5 0 0 0 0 1
+net=Vcc2:1
+T 65800 59250 5 9 1 1 0 1 1
+value=Vcc2
+}
+C 65600 55900 1 0 0 net-gnd-1.sym
+{
+T 65800 56150 5 5 0 0 0 0 1
+net=GND2:1
+T 65800 56100 5 5 1 1 180 6 1
+value=GND2
+}
+C 57700 51400 1 0 0 net-pwr-2.sym
+{
+T 57950 51500 5 5 0 0 0 0 1
+net=Vcc2:1
+T 58000 51650 5 9 1 1 0 1 1
+value=Vcc2
+}
+C 57800 50000 1 0 0 net-gnd-1.sym
+{
+T 58000 50250 5 5 0 0 0 0 1
+net=GND2:1
+T 58000 50200 5 5 1 1 180 6 1
+value=GND2
+}
+C 39600 56800 1 0 0 net-gnd-1.sym
+{
+T 39800 57050 5 5 0 0 0 0 1
+net=GND1:1
+T 39800 57000 5 5 1 1 180 6 1
+value=GND1
+}
+C 39500 58500 1 0 0 net-pwr-2.sym
+{
+T 39750 58600 5 5 0 0 0 0 1
+net=Vcc1:1
+T 39800 58850 5 9 1 1 0 1 1
+value=Vcc1
+}
+C 39800 52600 1 0 1 net-gnd-1.sym
+{
+T 39600 52850 5 5 0 0 0 6 1
+net=GND1:1
+T 39600 52800 5 5 1 1 180 0 1
+value=GND1
+}
+C 47900 55200 1 0 0 net-pwr-2.sym
+{
+T 48150 55300 5 5 0 0 0 0 1
+net=Vcc2:1
+T 48200 55450 5 9 1 1 0 1 1
+value=Vcc2
+}
+C 47600 53200 1 0 0 net-gnd-1.sym
+{
+T 47800 53450 5 5 0 0 0 0 1
+net=GND2:1
+T 47800 53400 5 5 1 1 180 6 1
+value=GND2
+}
+C 41600 49700 1 0 0 net-gnd-1.sym
+{
+T 41800 49950 5 5 0 0 0 0 1
+net=GND2:1
+T 41800 49900 5 5 1 1 180 6 1
+value=GND2
+}
+C 41900 51700 1 0 0 net-pwr-2.sym
+{
+T 42200 51950 5 9 1 1 0 1 1
+value=Vcc2
+T 42150 51800 5 5 0 0 0 0 1
+net=Vcc2:1
+}
+C 41500 53700 1 0 0 net-pwr-2.sym
+{
+T 41800 53950 5 9 1 1 0 1 1
+value=Vcc2
+T 41750 53800 5 5 0 0 0 0 1
+net=Vcc2:1
+}
+C 45900 54300 1 0 1 net-pwr-2.sym
+{
+T 45650 54400 5 5 0 0 0 6 1
+net=Vcc1:1
+T 45600 54650 5 9 1 1 0 7 1
+value=Vcc1
+}
+C 39900 50800 1 0 1 net-pwr-2.sym
+{
+T 39650 50900 5 5 0 0 0 6 1
+net=Vcc1:1
+T 39600 51150 5 9 1 1 0 7 1
+value=Vcc1
+}
+C 39500 54600 1 0 1 net-pwr-2.sym
+{
+T 39250 54700 5 5 0 0 0 6 1
+net=Vcc1:1
+T 39200 54950 5 9 1 1 0 7 1
+value=Vcc1
+}
+N 44000 53600 44800 53600 4
+{
+T 44100 53600 5 10 1 1 0 0 1
+netname=DE1
+}
+N 38400 57600 39300 57600 4
+{
+T 38500 57600 5 10 1 1 0 0 1
+netname=TxD1
+}
+N 38400 58000 39300 58000 4
+{
+T 38500 58000 5 10 1 1 0 0 1
+netname=RxD1
+}
+N 38400 56800 39300 56800 4
+{
+T 38500 56800 5 10 1 1 0 0 1
+netname=RTS1
+}
+C 55900 51600 1 0 1 net-pwr-2.sym
+{
+T 55650 51700 5 5 0 0 0 6 1
+net=Vcc2:1
+T 55600 51850 5 9 1 1 0 7 1
+value=Vcc2
+}
+C 50200 57100 1 0 0 74xx123-1.sym
+{
+T 52000 59200 5 10 1 1 0 0 1
+refdes=U9
+T 50600 59200 5 10 1 1 0 0 1
+value=74HC123
+T 50600 59400 5 10 0 0 0 0 1
+footprint=dip(16)
+T 50600 60200 5 10 0 0 0 0 1
+slot=2
+T 50600 61000 5 10 0 0 0 0 1
+net=Vcc1:16
+T 50600 61200 5 10 0 0 0 0 1
+net=GND1:8
+}
+N 50300 57700 50300 58700 4
+C 50400 57400 1 0 1 net-gnd-1.sym
+{
+T 50200 57650 5 5 0 0 0 6 1
+net=GND1:1
+T 50200 57600 5 5 1 1 180 0 1
+value=GND1
+}
+N 59400 57800 58500 57800 4
+{
+T 58700 57800 5 10 1 1 0 0 1
+netname=nRE2
+}
+C 55600 56100 1 0 0 jumper-3pin-2.sym
+{
+T 56100 56375 5 8 1 1 0 2 1
+refdes=J4
+T 55900 57400 5 10 0 0 0 0 1
+footprint=connector(1, 3, silkmark=none)
+}
+N 56200 56600 57100 56600 4
+{
+T 56900 56600 5 10 1 1 0 6 1
+netname=nRE2
+}
+N 54700 56300 55600 56300 4
+{
+T 54900 56300 5 10 1 1 0 0 1
+netname=DE2
+}
+C 55600 53000 1 0 0 jumper-3pin-2.sym
+{
+T 55900 54300 5 10 0 0 0 0 1
+footprint=connector(1, 3, silkmark=none)
+T 56100 53275 5 8 1 1 0 2 1
+refdes=J5
+}
+N 56200 53500 57100 53500 4
+{
+T 56900 53500 5 10 1 1 0 6 1
+netname=nRE3
+}
+N 54700 53800 55600 53800 4
+{
+T 54900 53800 5 10 1 1 0 0 1
+netname=DE2
+}
+C 55300 52800 1 0 0 net-gnd-1.sym
+{
+T 55500 53050 5 5 0 0 0 0 1
+net=GND2:1
+T 55500 53000 5 5 1 1 180 6 1
+value=GND2
+}
+N 55600 53200 55400 53200 4
+N 55400 53200 55400 53100 4
+C 55700 57000 1 0 1 net-pwr-2.sym
+{
+T 55450 57100 5 5 0 0 0 6 1
+net=Vcc2:1
+T 55400 57250 5 9 1 1 0 7 1
+value=Vcc2
+}
+N 55600 56900 55500 56900 4
+N 55500 56900 55500 57000 4
+C 64600 51400 1 0 0 RS485_transceiver.sym
+{
+T 65900 54400 5 10 0 0 0 0 1
+footprint=so(8)
+T 65000 54100 5 10 1 1 0 0 1
+refdes=U5.1
+T 66100 51700 5 10 1 1 180 6 1
+value=ST*485
+}
+N 64700 53100 63800 53100 4
+{
+T 64000 53100 5 10 1 1 0 0 1
+netname=nRE3
+}
+N 66700 52700 68000 52700 4
+{
+T 67800 52900 5 10 1 1 180 0 1
+netname=RS485_A
+}
+N 66700 53100 68000 53100 4
+{
+T 67800 53300 5 10 1 1 180 0 1
+netname=RS485_B
+}
+N 64700 53500 63800 53500 4
+{
+T 64000 53500 5 10 1 1 0 0 1
+netname=RxD2
+}
+C 59300 51400 1 0 0 RS485_transceiver.sym
+{
+T 60600 54400 5 10 0 0 0 0 1
+footprint=dip(8, pin_ringdia=75.00mil)
+T 59700 54100 5 10 1 1 0 0 1
+refdes=U5
+T 60800 51700 5 10 1 1 180 6 1
+value=ST*485
+}
+N 61400 52700 62700 52700 4
+{
+T 62500 52900 5 10 1 1 180 0 1
+netname=RS485_A
+}
+N 61400 53100 62700 53100 4
+{
+T 62500 53300 5 10 1 1 180 0 1
+netname=RS485_B
+}
+C 60300 51200 1 0 0 net-gnd-1.sym
+{
+T 60500 51450 5 5 0 0 0 0 1
+net=GND2:1
+T 60500 51400 5 5 1 1 180 6 1
+value=GND2
+}
+C 60200 54300 1 0 0 net-pwr-2.sym
+{
+T 60450 54400 5 5 0 0 0 0 1
+net=Vcc2:1
+T 60500 54550 5 9 1 1 0 1 1
+value=Vcc2
+}
+N 59400 53500 58500 53500 4
+{
+T 58700 53500 5 10 1 1 0 0 1
+netname=RxD2
+}
+C 65500 54300 1 0 0 net-pwr-2.sym
+{
+T 65750 54400 5 5 0 0 0 0 1
+net=Vcc2:1
+T 65800 54550 5 9 1 1 0 1 1
+value=Vcc2
+}
+C 65600 51200 1 0 0 net-gnd-1.sym
+{
+T 65800 51450 5 5 0 0 0 0 1
+net=GND2:1
+T 65800 51400 5 5 1 1 180 6 1
+value=GND2
+}
+N 59400 53100 58500 53100 4
+{
+T 58700 53100 5 10 1 1 0 0 1
+netname=nRE3
+}
+C 58800 52300 1 0 0 net-gnd-1.sym
+{
+T 59000 52550 5 5 0 0 0 0 1
+net=GND2:1
+T 59000 52500 5 5 1 1 180 6 1
+value=GND2
+}
+N 58900 52600 58900 52700 4
+N 58900 52700 59400 52700 4
+N 64200 52700 64700 52700 4
+N 64200 52600 64200 52700 4
+C 64100 52300 1 0 0 net-gnd-1.sym
+{
+T 64300 52550 5 5 0 0 0 0 1
+net=GND2:1
+T 64300 52500 5 5 1 1 180 6 1
+value=GND2
+}
+C 43400 56700 1 0 1 resistor-variable-2.sym
+{
+T 43050 57150 5 10 1 1 180 6 1
+refdes=R9
+T 43400 56700 5 10 0 0 0 6 1
+footprint=tb(3, step=100.00mil, sideOffset=75.00mil, frontOffset=95.00mil, backOffset=95.00mil, mark=0, pin_flags=none)
+T 43400 56700 5 10 0 0 90 2 1
+slotdef=1:1,3,2
+}
+N 43400 57300 42900 57300 4
+C 38500 56300 1 0 1 connector_1x5.sym
+{
+T 37700 57900 5 10 1 1 90 6 1
+refdes=CONN1
+T 38100 59100 5 10 0 0 0 6 1
+footprint=connector(5, 1, silkmark=externaly)
+}
+N 42500 56800 42400 56800 4
+N 42400 56800 42400 58000 4
+C 36600 48600 0 0 0 title-bordered-A3.sym
+C 53500 48600 0 0 0 title-bordered-A3.sym
+T 54400 57800 9 8 1 0 0 0 8
+U4:  RS485 transmiter
+(with optional receiver function)
+
+transmiter is crontrol by DE signal
+
+reciver function deopends of J4
+J4: 2==3 => receiver enabled (by DE signal)
+J4: 2==1 => receiver disabled
+T 54400 54300 9 8 1 0 0 0 5
+U5:  optional RS485 receiver
+(used for full-duplex, 4 wires RS485 lines)
+
+J5: 2==1 => receiver control by DE signal
+J5: 2==3 => receiver always enabled
+T 46000 49500 15 13 1 0 0 0 1
+Optoisolation and generation of transmiter control signal
+T 45600 49850 15 15 1 0 0 0 1
+RS485 BUS INTERFACE SUBCIRCUIT
+T 49700 49200 15 9 1 0 0 0 1
+2020-09-23
+T 62900 49500 15 13 1 0 0 0 1
+RS485 transmiter and receiver
+T 62500 49850 15 15 1 0 0 0 1
+RS485 BUS INTERFACE SUBCIRCUIT
+T 66600 49200 15 9 1 0 0 0 1
+2020-09-23
+C 50700 54400 1 270 1 capacitor-1.sym
+{
+T 50700 54400 5 10 0 0 0 6 1
+footprint=acy(200.00mil, type=block, pin_flags=none, pol=none)
+T 51600 54600 5 10 0 0 90 2 1
+symversion=0.1
+T 51000 55100 5 10 1 1 180 6 1
+refdes=C8
+T 50800 54700 5 10 1 1 180 0 1
+value=470n
+}
+N 50900 55300 50900 55400 4
+N 50900 54400 50900 54300 4
+T 51500 54000 9 8 1 0 90 2 2
+C8 near to U9 is important
+for U9 pulse time stability
+C 51100 55400 1 0 1 net-pwr-2.sym
+{
+T 50850 55500 5 5 0 0 0 6 1
+net=Vcc1:1
+T 50800 55650 5 9 1 1 0 7 1
+value=Vcc1
+}
+C 51000 54000 1 0 1 net-gnd-1.sym
+{
+T 50800 54250 5 5 0 0 0 6 1
+net=GND1:1
+T 50800 54200 5 5 1 1 180 0 1
+value=GND1
+}
+N 43400 57300 43400 57000 4
+N 43400 57000 43600 57000 4

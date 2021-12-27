@@ -1,0 +1,426 @@
+v 20201211 2
+C 57400 43300 1 0 1 pin-pwr-1.sym
+{
+T 56850 43450 5 10 1 1 0 0 1
+refdes=GND
+}
+C 57300 47300 1 0 1 pin-pwr-1.sym
+{
+T 56750 47450 5 10 1 1 0 0 1
+refdes=Vcc
+}
+C 57300 47600 1 0 0 net-pwr-1.sym
+{
+T 57500 47950 5 9 1 1 0 5 1
+value=Vcc
+}
+N 57200 47400 57500 47400 4
+N 57500 47400 57500 47600 4
+C 57500 42900 1 0 0 net-gnd-1.sym
+N 57300 43400 57600 43400 4
+N 57600 43400 57600 43200 4
+C 55400 37300 0 0 0 title-bordered-A3.sym
+T 64400 38550 15 15 1 0 0 0 1
+ANALOG INPUT SUBCIRCUIT
+T 68500 37900 15 9 1 0 0 0 1
+2020-10-26
+C 72400 37300 0 0 0 title-bordered-A3.sym
+T 85500 37900 15 9 1 0 0 0 1
+2020-10-26
+T 81400 38550 15 15 1 0 0 0 1
+ANALOG INPUT SUBCIRCUIT
+T 81800 38200 15 13 1 0 0 0 1
+input 2
+C 57100 41300 1 0 0 net-pwr-1.sym
+{
+T 57300 41650 5 9 1 1 0 5 1
+value=Vcc
+}
+C 57500 40300 1 90 0 jumper-2pin-1.sym
+{
+T 57050 40550 5 8 1 1 90 2 1
+refdes=J9
+T 55800 40700 5 10 0 0 90 0 1
+footprint=connector(1, 2, silkmark=none, pin_flags=none)
+}
+N 57300 41200 57300 41300 4
+C 57200 39300 1 270 1 resistor-variable-2.sym
+{
+T 57150 39950 5 10 1 1 180 0 1
+refdes=R9
+T 57200 39300 5 10 0 0 270 6 1
+footprint=tb(3, step=100.00mil, sideOffset=75.00mil, frontOffset=95.00mil, backOffset=95.00mil, mark=0, pin_flags=none)
+T 57200 39300 5 10 0 0 270 0 1
+slotdef=1:1,3,2
+T 57100 39500 5 10 1 1 0 6 1
+value=1k
+T 57250 39350 5 6 1 1 0 6 1
+value=multiturn
+}
+N 57300 40200 57300 40300 4
+T 58000 41000 9 8 1 0 0 2 3
+J9:
+  ON => bidirectional input (-20mA – 20mA / -10V – 10V / ...)
+  OFF => unidirectional input (0mA – 20mA / 0V – 10V / ...)
+C 57800 39900 1 0 0 net-pwr-1.sym
+{
+T 58000 40250 5 9 1 1 0 5 1
+value=Vref
+T 58050 40000 5 5 0 0 0 0 1
+net=Vref:1
+}
+N 58000 39900 58000 39800 4
+N 58000 39800 57800 39800 4
+C 57400 38900 1 0 1 net-gnd-1.sym
+N 57300 39200 57300 39300 4
+T 58000 39500 9 8 1 0 0 2 5
+R9:
+  for bidirectional input set Vref to (U1_Vout_max - U1_Vout_min)/2
+
+(for LM358: Vout_min = 0, Vout_max = Vcc - 1.5V)
+
+C 63400 44500 1 90 1 resistor-variable-2.sym
+{
+T 63400 44500 5 10 0 0 90 6 1
+footprint=tb(3, step=100.00mil, sideOffset=75.00mil, frontOffset=95.00mil, backOffset=95.00mil, mark=0, pin_flags=none)
+T 63400 44500 5 10 0 0 90 0 1
+slotdef=1:1,3,2
+T 63450 44150 5 10 1 1 0 0 1
+refdes=R2
+T 63450 44000 5 10 1 1 180 6 1
+value=1M
+T 63350 43750 5 6 1 1 180 6 1
+value=multiturn
+}
+N 63300 46800 63300 46700 4
+N 60800 44000 60800 45400 4
+C 62500 44700 1 0 1 operational_amplifier-3.sym
+{
+T 62500 44700 5 10 0 1 180 6 1
+numslots=2
+T 62500 44700 5 10 0 1 180 6 1
+slot=1
+T 62500 44700 5 10 0 1 180 6 1
+slotdef=1:3,2,1,8,4
+T 62500 44700 5 10 0 0 180 6 1
+footprint=dip(8, pin_ringdia=73.00mil)
+T 62500 44700 5 10 0 0 180 6 1
+slotdef=2:5,6,7,8,4
+T 62175 45850 5 10 1 1 0 0 1
+refdes=U1
+T 62200 45000 5 10 1 1 180 6 1
+value=LM358
+}
+C 61900 46000 1 0 1 net-pwr-1.sym
+{
+T 61700 46350 5 9 1 1 0 5 1
+value=Vcc
+}
+C 61600 44500 1 0 0 net-gnd-1.sym
+C 62500 46750 1 180 1 net-pwr-1.sym
+{
+T 62750 46650 5 5 0 0 180 6 1
+net=Vref:1
+T 62700 46400 5 9 1 1 180 5 1
+value=Vref
+}
+N 62700 46750 62700 46800 4
+N 63300 46800 62700 46800 4
+N 63300 45600 66100 45600 4
+{
+T 67000 45600 5 10 0 1 180 6 1
+netname=signal1_INPUT
+}
+C 66000 45700 1 180 1 pin-in-1.sym
+{
+T 66650 45650 5 10 1 1 0 6 1
+refdes=signal1_INPUT
+}
+N 63300 43400 66100 43400 4
+{
+T 66200 43400 5 10 0 1 180 6 1
+netname=signal1_GND
+}
+C 66000 43500 1 180 1 pin-pwr-1.sym
+{
+T 66550 43450 5 10 1 1 0 6 1
+refdes=signal1_GND
+}
+C 57300 45500 1 180 0 pin-out-1.sym
+{
+T 56775 45450 5 10 1 1 0 0 1
+refdes=to_ADC1
+}
+T 65450 45100 9 8 1 0 180 6 3
+J3:
+ ON => current input (4-20mA / ...)
+ OFF => voltage input (0-10V / ...)
+T 56500 46700 9 10 1 0 0 0 2
+for output range 0–3.3V
+Vcc must be ≫ 3.3V (~4.7V)
+C 60500 45500 1 180 0 resistor-2.sym
+{
+T 60500 45500 5 10 0 0 270 8 1
+footprint=acy(100.00mil, pin_flags=none, type=standing)
+T 59900 45250 5 10 1 1 180 6 1
+refdes=R4
+T 59700 45700 5 10 1 1 180 6 1
+value=10k
+}
+N 60500 45400 61000 45400 4
+N 59600 45400 57200 45400 4
+{
+T 59600 45400 5 10 0 0 0 0 1
+netname=to_ADC1
+}
+T 58900 43750 9 8 1 0 180 3 1
+Z1, C1: optional
+C 65400 44500 1 90 0 jumper-2pin-1.sym
+{
+T 64950 44750 5 8 1 1 90 2 1
+refdes=J3
+T 63700 44900 5 10 0 0 90 0 1
+footprint=connector(1, 2, silkmark=none, pin_flags=none)
+}
+C 65100 43600 1 270 1 resistor-2.sym
+{
+T 65100 43600 5 10 0 0 180 2 1
+footprint=acy(110.00mil, pin_flags=none, type=standing)
+T 65050 43800 5 10 1 1 90 0 1
+refdes=R3
+T 65500 43800 5 10 1 1 90 0 1
+value=470
+}
+N 65200 45400 65200 45600 4
+N 65200 43400 65200 43600 4
+N 62400 45200 63300 45200 4
+N 63300 45200 63300 44500 4
+N 62800 44000 60800 44000 4
+N 63300 43400 63300 43600 4
+N 63300 45600 63300 45800 4
+N 62700 46200 62700 45600 4
+N 62700 45600 62400 45600 4
+N 62700 46200 62800 46200 4
+C 63400 46700 1 90 1 resistor-variable-2.sym
+{
+T 63400 46700 5 10 0 0 90 6 1
+footprint=tb(3, step=100.00mil, sideOffset=75.00mil, frontOffset=95.00mil, backOffset=95.00mil, mark=0, pin_flags=none)
+T 63400 46700 5 10 0 0 90 0 1
+slotdef=1:1,3,2
+T 63450 46350 5 10 1 1 0 0 1
+refdes=R1
+T 63450 46200 5 10 1 1 180 6 1
+value=1M
+T 63350 45950 5 6 1 1 180 6 1
+value=multiturn
+}
+C 80100 44800 1 0 1 operational_amplifier-3.sym
+{
+T 80100 44800 5 10 0 1 180 6 1
+numslots=2
+T 80100 44800 5 10 0 1 180 6 1
+slot=2
+T 80100 44800 5 10 0 1 180 6 1
+slotdef=1:3,2,1,8,4
+T 80100 44800 5 10 0 0 180 6 1
+footprint=dip(8, pin_ringdia=73.00mil)
+T 80100 44800 5 10 0 0 180 6 1
+slotdef=2:5,6,7,8,4
+T 79775 45950 5 10 1 1 0 0 1
+refdes=U1
+T 79800 45100 5 10 1 1 180 6 1
+value=LM358
+}
+N 77200 45500 75100 45500 4
+{
+T 77200 45500 5 10 0 0 0 0 1
+netname=to_ADC2
+}
+C 75200 45600 1 180 0 pin-out-1.sym
+{
+T 74675 45550 5 10 1 1 0 0 1
+refdes=to_ADC2
+}
+N 80900 45700 83150 45700 4
+{
+T 83300 45700 5 10 0 1 180 6 1
+netname=signal2_INPUT
+}
+C 83050 45800 1 180 1 pin-in-1.sym
+{
+T 83700 45750 5 10 1 1 0 6 1
+refdes=signal2_INPUT
+}
+N 80900 43500 83150 43500 4
+{
+T 82700 43500 5 10 0 1 180 6 1
+netname=signal2_GND
+}
+C 83050 43600 1 180 1 pin-pwr-1.sym
+{
+T 83600 43550 5 10 1 1 0 6 1
+refdes=signal2_GND
+}
+N 76800 45300 76800 45500 4
+N 78400 44100 78400 45500 4
+C 79500 46100 1 0 1 net-pwr-1.sym
+{
+T 79300 46450 5 9 1 1 0 5 1
+value=Vcc
+}
+C 79200 44600 1 0 0 net-gnd-1.sym
+N 76800 44300 76800 44400 4
+C 78100 45600 1 180 0 resistor-2.sym
+{
+T 78100 45600 5 10 0 0 270 8 1
+footprint=acy(100.00mil, pin_flags=none, type=standing)
+T 77500 45350 5 10 1 1 180 6 1
+refdes=R8
+T 77300 45800 5 10 1 1 180 6 1
+value=10k
+}
+N 78100 45500 78600 45500 4
+C 82450 44600 1 90 0 jumper-2pin-1.sym
+{
+T 80750 45000 5 10 0 0 90 0 1
+footprint=connector(1, 2, silkmark=none, pin_flags=none)
+T 82000 44850 5 8 1 1 90 2 1
+refdes=J7
+}
+C 82150 43700 1 270 1 resistor-2.sym
+{
+T 82150 43700 5 10 0 0 180 2 1
+footprint=acy(110.00mil, pin_flags=none, type=standing)
+T 82100 43900 5 10 1 1 90 0 1
+refdes=R7
+T 82550 43900 5 10 1 1 90 0 1
+value=470
+}
+N 82250 45500 82250 45700 4
+N 82250 43500 82250 43700 4
+N 80000 45300 80900 45300 4
+N 80400 44100 78400 44100 4
+N 80300 45700 80000 45700 4
+C 76400 44400 1 90 0 diode-zener-2.sym
+{
+T 75121 44779 5 10 0 0 90 0 1
+slotdef=1:2,1
+T 76400 44400 5 10 0 0 0 0 1
+footprint=alf(100.00mil, type=zener)
+T 76100 45150 5 10 1 1 180 0 1
+refdes=Z2
+T 76100 44650 5 10 1 1 180 0 1
+value=5V1
+}
+C 77000 45300 1 90 1 capacitor-1.sym
+{
+T 76900 45100 5 10 1 1 180 6 1
+refdes=C2
+T 76900 44700 5 10 1 1 180 6 1
+value=10n
+T 77000 45300 5 10 0 0 180 6 1
+footprint=acy(100.00mil, type=block, pin_flags=none, pol=none)
+T 76100 45100 5 10 0 0 270 2 1
+symversion=0.1
+}
+N 76200 45300 76200 45500 4
+C 76400 43900 1 0 0 net-gnd-1.sym
+N 76200 44400 76200 44300 4
+N 76800 44300 76200 44300 4
+N 76500 44200 76500 44300 4
+T 64350 46350 9 8 1 0 0 2 2
+R1a = R2a
+R1b = R2b
+B 63950 45900 100 225 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 63950 46275 100 225 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 64000 46125 64000 46275 3 0 0 0 -1 -1
+L 64000 45900 64000 45750 3 0 0 0 -1 -1
+L 64000 46500 64000 46650 3 0 0 0 -1 -1
+L 64000 46200 63850 46200 3 0 0 0 -1 -1
+T 64075 46025 9 6 1 0 270 3 1
+R1a
+T 64075 46400 9 6 1 0 270 3 1
+R1b
+B 63950 43700 100 225 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 63950 44075 100 225 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 64000 43925 64000 44075 3 0 0 0 -1 -1
+L 64000 43700 64000 43550 3 0 0 0 -1 -1
+L 64000 44300 64000 44450 3 0 0 0 -1 -1
+L 64000 44000 63850 44000 3 0 0 0 -1 -1
+T 64075 43825 9 6 1 0 270 3 1
+R2a
+T 64075 44200 9 6 1 0 270 3 1
+R2b
+C 81000 44600 1 90 1 resistor-variable-2.sym
+{
+T 81000 44600 5 10 0 0 90 6 1
+footprint=tb(3, step=100.00mil, sideOffset=75.00mil, frontOffset=95.00mil, backOffset=95.00mil, mark=0, pin_flags=none)
+T 81000 44600 5 10 0 0 90 0 1
+slotdef=1:1,3,2
+T 81050 44250 5 10 1 1 0 0 1
+refdes=R6
+T 81050 44100 5 10 1 1 180 6 1
+value=1M
+T 80950 43850 5 6 1 1 180 6 1
+value=multiturn
+}
+N 80900 46900 80900 46800 4
+C 80100 46850 1 180 1 net-pwr-1.sym
+{
+T 80350 46750 5 5 0 0 180 6 1
+net=Vref:1
+T 80300 46500 5 9 1 1 180 5 1
+value=Vref
+}
+N 80300 46850 80300 46900 4
+N 80900 46900 80300 46900 4
+N 80900 45300 80900 44600 4
+N 80900 43500 80900 43700 4
+N 80900 45700 80900 45900 4
+N 80300 46300 80300 45700 4
+N 80300 46300 80400 46300 4
+C 81000 46800 1 90 1 resistor-variable-2.sym
+{
+T 81000 46800 5 10 0 0 90 6 1
+footprint=tb(3, step=100.00mil, sideOffset=75.00mil, frontOffset=95.00mil, backOffset=95.00mil, mark=0, pin_flags=none)
+T 81000 46800 5 10 0 0 90 0 1
+slotdef=1:1,3,2
+T 81050 46450 5 10 1 1 0 0 1
+refdes=R5
+T 81050 46300 5 10 1 1 180 6 1
+value=1M
+T 80950 46050 5 6 1 1 180 6 1
+value=multiturn
+}
+N 59200 45200 59200 45400 4
+N 59200 44200 59200 44300 4
+C 58800 44300 1 90 0 diode-zener-2.sym
+{
+T 57521 44679 5 10 0 0 90 0 1
+slotdef=1:2,1
+T 58800 44300 5 10 0 0 0 0 1
+footprint=alf(100.00mil, type=zener)
+T 58500 45050 5 10 1 1 180 0 1
+refdes=Z1
+T 58500 44550 5 10 1 1 180 0 1
+value=5V1
+}
+C 59400 45200 1 90 1 capacitor-1.sym
+{
+T 59400 45200 5 10 0 0 180 6 1
+footprint=acy(100.00mil, type=block, pin_flags=none, pol=none)
+T 58500 45000 5 10 0 0 270 2 1
+symversion=0.1
+T 59300 45000 5 10 1 1 180 6 1
+refdes=C1
+T 59300 44600 5 10 1 1 180 6 1
+value=10n
+}
+N 58600 45200 58600 45400 4
+C 58800 43800 1 0 0 net-gnd-1.sym
+N 58600 44300 58600 44200 4
+N 59200 44200 58600 44200 4
+N 58900 44100 58900 44200 4
+T 55700 36700 9 10 1 0 0 0 2
+SIMULATIONS:
+	https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxABZtwQFIAoASxAFpjCpX3wwVOY4pIcJHEE9AE4gUFSKzAcZcink6FxUpZVVawvNeIAOtFKt6rCM8KZpyGAdxCWKIbs+uqGAcydXzvlwU7ekcKbgVKbm4GY2w0Hj44uQiIYMctFWkMPkyGKVlkjjCOCOT4OElKOHAMIuq9PjLyyqSEquT9JvgW+IiC8A4uitD6urk8YIBDdtciqI5VJCHq1DDiTAQ0PDA8CgoZF1XSbAwEMARLMEgxfSvmx03VbkePKBDIjmebaPoAN3kShwWClOpxZLRwAhoI0oNBxMwXm4rNEQBgAKYsPD0AAelBO0hQEAQeGoKCsgWoACNGAB6ACuADtGCwACaMCRogDGABdGAB7BmTAA2AB0AM6MBmGOnc96tBrScEKhyKjp8MDrNoqtglfTA3WNd76toa9WdSpBAGqq1yXAMADKs1YcQGchYLrsIAAZsKxWjOCg5fFjfLBu8tCxMhHSu9LZGdOD428AEogbC7AkudMuFAXfhVaRw-MwcQ+CgRMkucuKPMqzA5HTZGphx39MC1GaV-M+oV+gNBt0VxMxxw6zjcd2G9P5lgwVLQCAAYTpEg5DNl0-b0nkclzIAAIovxQB5L1ev2yoA

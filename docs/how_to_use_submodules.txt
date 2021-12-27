@@ -1,0 +1,17 @@
+To use a submodule layout as part of bigger PCB, you must ensure unique of 'refdes'.
+The easiest way to get this is using prefix associated with the name / number of submodule in bigger project.
+That's how it was made when created main boards PCBs.
+
+To create copy of submodule PCB with changed refdes you can use sed commands like `sed -Ee 's@refdes=@refdes=XX@g' $FILE.lht > $FILE.x.lht` for example:
+
+	for i in `seq 0 0`; do sed -Ee "s@refdes=@refdes=i$i@g" submodules/input_opamp_adc.lht > tmp/i$i.lht; done
+	for i in `seq 2 4`; do sed -Ee "s@refdes=@refdes=i$i@g" submodules/input_opto_3eol_adc.lht > tmp/i$i.lht; done
+	
+	for i in `seq 0 0`; do sed -Ee "s@refdes=@refdes=o$i@g" submodules/output_analog.lht > tmp/o$i.lht; done
+	for i in `seq 2 4`; do sed -Ee "s@refdes=@refdes=o$i@g" submodules/output_half_H_bridge.lht > tmp/o$i.lht; done
+	
+	for i in `seq 0 0`; do sed -Ee "s@refdes=@refdes=io$i@g" submodules/output_ac.lht > tmp/io$i.lht; done
+
+In similar way you can rescale all element names on PCB's text layer:
+
+	sed -Ee 's@string=%a.parent.refdes%;(.*) scale=([0-9]*);@string=%a.parent.refdes%;\1 scale=70;@g' -i $FILE.lht
