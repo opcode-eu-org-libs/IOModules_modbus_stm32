@@ -45,3 +45,7 @@ for (i=0; i< NUMBER_OF_CHANNELS; ++i) {
 	}
 }
 </pre>
+
+### hardware debouncing
+
+The above code use software debouncing (`history`, `is_stable`). It's also possible add hardware debouncing to optoisolated [input_opto_3eol_adc](../submodules/input_opto_3eol_adc.sch) by using C2 (see [simulation](http://circuitjs.opcode.eu.org/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAQBYKLIAoAcwsMhGzWde20KjrAxdI1FJVYoEvUV3DI4NVP0IoQlMFLGq84zSoAmAUwBmAQwCuAGwAuAWgsG9s1s9hg6AJzYIV01epC+rJSC9ADuWjqskpF84dEBmvHsznQAxn5SeHgRAVlQULDwkBAwcG7hahpB-ih5YTm+lNq52fW4IprY3gkpAPayhNRBkMTZSDAlAbLYdP0qg-liowrQEBA+bLNTC8NkK-AYeGASUxszQA)).
