@@ -2,7 +2,7 @@ ha:pcb-rnd-board-v4 {
 
  ha:attributes {
    {PCB::grid::unit}=mil
-   {import::src0}=./bus_RS485.sch
+   {import::src0}=./bus_RS485_with_HC123.sch
  }
 
  li:styles {

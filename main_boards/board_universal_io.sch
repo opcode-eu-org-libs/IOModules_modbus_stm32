@@ -446,8 +446,8 @@ C 47000 53000 1 0 0 input_opamp_adc.sym
 {
 T 47275 54400 5 10 1 1 0 8 1
 refdes=i0
-T 48655 54275 5 6 1 1 0 6 1
-source=input_opamp_adc.sch
+T 48755 54275 5 6 1 1 0 6 1
+source=input_opamp_adc__old.sch
 }
 N 48900 53800 49300 53800 4
 N 48900 53400 49300 53400 4

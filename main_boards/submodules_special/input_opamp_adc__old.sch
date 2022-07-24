@@ -1,4 +1,4 @@
-v 20220529 2
+v 20201211 2
 C 57400 43300 1 0 1 pin-pwr-1.sym
 {
 T 56850 43450 5 10 1 1 0 0 1
@@ -185,7 +185,7 @@ footprint=connector(1, 2, silkmark=none, pin_flags=none)
 C 65100 43600 1 270 1 resistor-2.sym
 {
 T 65100 43600 5 10 0 0 180 2 1
-footprint=acy(200.00mil, dia=50mil, pin_flags=none, type=endcap)
+footprint=acy(110.00mil, pin_flags=none, type=standing)
 T 65050 43800 5 10 1 1 90 0 1
 refdes=R3
 T 65500 43800 5 10 1 1 90 0 1
@@ -290,7 +290,7 @@ refdes=J7
 C 82150 43700 1 270 1 resistor-2.sym
 {
 T 82150 43700 5 10 0 0 180 2 1
-footprint=acy(200.00mil, dia=50mil, pin_flags=none, type=endcap)
+footprint=acy(110.00mil, pin_flags=none, type=standing)
 T 82100 43900 5 10 1 1 90 0 1
 refdes=R7
 T 82550 43900 5 10 1 1 90 0 1
@@ -306,7 +306,7 @@ C 76400 44400 1 90 0 diode-zener-2.sym
 T 75121 44779 5 10 0 0 90 0 1
 slotdef=1:2,1
 T 76400 44400 5 10 0 0 0 0 1
-footprint=alf(140.00mil, type=zener)
+footprint=alf(100.00mil, type=zener)
 T 76100 45150 5 10 1 1 180 0 1
 refdes=Z2
 T 76100 44650 5 10 1 1 180 0 1
@@ -319,7 +319,7 @@ refdes=C2
 T 76900 44700 5 10 1 1 180 6 1
 value=10n
 T 77000 45300 5 10 0 0 180 6 1
-footprint=acy(140.00mil, type=block, pin_flags=none, pol=none)
+footprint=acy(100.00mil, type=block, pin_flags=none, pol=none)
 T 76100 45100 5 10 0 0 270 2 1
 symversion=0.1
 }
@@ -399,7 +399,7 @@ C 58800 44300 1 90 0 diode-zener-2.sym
 T 57521 44679 5 10 0 0 90 0 1
 slotdef=1:2,1
 T 58800 44300 5 10 0 0 0 0 1
-footprint=alf(140.00mil, type=zener)
+footprint=alf(100.00mil, type=zener)
 T 58500 45050 5 10 1 1 180 0 1
 refdes=Z1
 T 58500 44550 5 10 1 1 180 0 1
@@ -408,7 +408,7 @@ value=5V1
 C 59400 45200 1 90 1 capacitor-1.sym
 {
 T 59400 45200 5 10 0 0 180 6 1
-footprint=acy(140.00mil, type=block, pin_flags=none, pol=none)
+footprint=acy(100.00mil, type=block, pin_flags=none, pol=none)
 T 58500 45000 5 10 0 0 270 2 1
 symversion=0.1
 T 59300 45000 5 10 1 1 180 6 1
