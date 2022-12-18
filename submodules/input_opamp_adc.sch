@@ -109,7 +109,7 @@ slotdef=2:5,6,7,8,4
 T 62175 45850 5 10 1 1 0 0 1
 refdes=U1
 T 62200 45000 5 10 1 1 180 6 1
-value=LM358
+value=MCP602
 }
 C 61900 46000 1 0 1 net-pwr-1.sym
 {
@@ -155,9 +155,6 @@ T 65450 45100 9 8 1 0 180 6 3
 J3:
  ON => current input (4-20mA / ...)
  OFF => voltage input (0-10V / ...)
-T 56500 46700 9 10 1 0 0 0 2
-for output range 0–3.3V
-Vcc must be ≫ 3.3V (~4.7V)
 C 60500 45500 1 180 0 resistor-2.sym
 {
 T 60500 45500 5 10 0 0 270 8 1
@@ -229,7 +226,7 @@ slotdef=2:5,6,7,8,4
 T 79775 45950 5 10 1 1 0 0 1
 refdes=U1
 T 79800 45100 5 10 1 1 180 6 1
-value=LM358
+value=MCP602
 }
 N 77200 45500 75100 45500 4
 {
@@ -424,3 +421,6 @@ N 58900 44100 58900 44200 4
 T 55700 36700 9 10 1 0 0 0 2
 SIMULATIONS:
 	https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxABZtwQFIAoASxAFpjCpX3wwVOY4pIcJHEE9AE4gUFSKzAcZcink6FxUpZVVawvNeIAOtFKt6rCM8KZpyGAdxCWKIbs+uqGAcydXzvlwU7ekcKbgVKbm4GY2w0Hj44uQiIYMctFWkMPkyGKVlkjjCOCOT4OElKOHAMIuq9PjLyyqSEquT9JvgW+IiC8A4uitD6urk8YIBDdtciqI5VJCHq1DDiTAQ0PDA8CgoZF1XSbAwEMARLMEgxfSvmx03VbkePKBDIjmebaPoAN3kShwWClOpxZLRwAhoI0oNBxMwXm4rNEQBgAKYsPD0AAelBO0hQEAQeGoKCsgWoACNGAB6ACuADtGCwACaMCRogDGABdGAB7BmTAA2AB0AM6MBmGOnc96tBrScEKhyKjp8MDrNoqtglfTA3WNd76toa9WdSpBAGqq1yXAMADKs1YcQGchYLrsIAAZsKxWjOCg5fFjfLBu8tCxMhHSu9LZGdOD428AEogbC7AkudMuFAXfhVaRw-MwcQ+CgRMkucuKPMqzA5HTZGphx39MC1GaV-M+oV+gNBt0VxMxxw6zjcd2G9P5lgwVLQCAAYTpEg5DNl0-b0nkclzIAAIovxQB5L1ev2yoA
+T 58200 47800 9 10 1 0 0 0 2
+For Vcc = 3.3V (uC level) use "Rail-to-Rail Output" op  amp (eg. MCP602).
+Otherwise (eg. LM358) use Vcc ≫ 3.3V (~4.7V)
