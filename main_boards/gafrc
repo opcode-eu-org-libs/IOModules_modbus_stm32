@@ -2,8 +2,3 @@
 (component-library-search "../submodules")
 (source-library  "../submodules")
 (source-library-search "../submodules")
-
-(component-library "submodules_special" "project dir")
-(component-library-search "submodules_special")
-(source-library  "submodules_special")
-(source-library-search "submodules_special")

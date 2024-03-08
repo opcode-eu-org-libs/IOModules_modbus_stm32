@@ -1,648 +1,4 @@
 ha:pcb-rnd-board-v4 {
- ha:netlists {
-  li:input {
-   ha:3.3V {
-    li:conn {
-     C7-2
-     C8-2
-     i0R6-2
-     i1R6-2
-     i2R6-2
-     i3R6-2
-     i4R6-2
-     i5R6-2
-     i6R6-2
-     i7R6-2
-     R7-1
-     R13-1
-     R14-1
-     R27-1
-     U1-4
-     U9-8
-    }
-   }
-   ha:3V3_Ext1 {
-    li:conn {
-     C52-2
-     D51-1
-     ONE_WIRE-2
-     R25-1
-     U5-1
- U5-2;    }
-   }
-   ha:5V_Ext2 {
-    li:conn {
-     C6-2
-     C62-2
-     D61-1
-     i8U1-8
-     i8J9-2
-     i9U1-8
-     i9J9-2
-     ONE_WIRE-1
-     R23-1
-     R61-2
-     U6-1
- U6-2;    }
-   }
-    ha:ADC_V1 {
-    li:conn { R21-2; R22-1; U1-23;    }
-    }
-    ha:ADC_V2 {
-    li:conn { R23-2; R24-1; U1-31;    }
-    }
-    ha:ADC_V3 {
-    li:conn { R25-2; R26-1; U1-24;    }
-    }
-    ha:ADC_V4 {
-    li:conn { R27-2; R28-1;    }
-    }
-   ha:GND {
-    li:conn {
-     BUS_CONN-1
-     C6-1
-     C7-1
-     C8-1
-     C51-1
-     C52-1
-     C61-1
-     C62-1
-     D51-2
-     D61-2
-     i0C1-1
-     i0Z1-2
-     i0U1-3
-     i1C1-1
-     i1Z1-2
-     i1U1-3
-     i2C1-1
-     i2Z1-2
-     i2U1-3
-     i3C1-1
-     i3Z1-2
-     i3U1-3
-     i4C1-1
-     i4Z1-2
-     i4U1-3
-     i5C1-1
-     i5Z1-2
-     i5U1-3
-     i6C1-1
-     i6Z1-2
-     i6U1-3
-     i7C1-1
-     i7Z1-2
-     i7U1-3
-     i8C1-2
-     i8Z1-2
-     i8U1-4
-     i8C2-2
-     i8Z2-2
-     i8R9-1
-     i9C1-2
-     i9Z1-2
-     i9U1-4
-     i9C2-2
-     i9Z2-2
-     i9R9-1
-     o0U1-2
-     o1U1-2
-     o2U1-2
-     o3U1-2
-     ONE_WIRE-3
-     R22-2
-     R24-2
-     R26-2
-     R28-2
-     S1-1
-     S2-1
-     U1-5
-     U5-4
-     U6-4
-     U9-1
-     U9-2
-     U9-3
-     U9-4
-     U9-7
-     Z7-2
-    }
-   }
-   ha:GND_DO {
-    li:conn {
-     DOx4-6
-     o0Q1.1-3
-     o0Z1-2
-     o0D1-2
-     o0Q1.2-3
-     o0U1-3
-     o0Q1-3
-     o1Q1.1-3
-     o1Z1-2
-     o1D1-2
-     o1Q1.2-3
-     o1U1-3
-     o1Q1-3
-     o2Q1.1-3
-     o2Z1-2
-     o2D1-2
-     o2Q1.2-3
-     o2U1-3
-     o2Q1-3
-     o3Q1.1-3
-     o3Z1-2
-     o3D1-2
-     o3Q1.2-3
-     o3U1-3
-     o3Q1-3
-    }
-   }
-    ha:i0_unnamed_net49 {
-    li:conn { i0U1-1; i0R4-1;    }
-    }
-    ha:i0_unnamed_net50 {
-    li:conn { i0J1-1; i0R1-2; i0R4-2;    }
-    }
-    ha:i0_unnamed_net51 {
-    li:conn { i0R1-1; i0J2-2;    }
-    }
-    ha:i0_unnamed_net52 {
-    li:conn { i0R5-1; i0R6-3;    }
-    }
-    ha:i1_unnamed_net55 {
-    li:conn { i1U1-1; i1R4-1;    }
-    }
-    ha:i1_unnamed_net56 {
-    li:conn { i1J1-1; i1R1-2; i1R4-2;    }
-    }
-    ha:i1_unnamed_net57 {
-    li:conn { i1R1-1; i1J2-2;    }
-    }
-    ha:i1_unnamed_net58 {
-    li:conn { i1R5-1; i1R6-3;    }
-    }
-    ha:I2C_SCL {
-    li:conn { R13-2; U1-32; U9-6;    }
-    }
-    ha:I2C_SDA {
-    li:conn { R14-2; U1-1; U9-5;    }
-    }
-   ha:i2_unnamed_net3 {
-    li:conn {
-     i2U1-1
-     i2R4-1
-    }
-   }
-   ha:i2_unnamed_net4 {
-    li:conn {
-     i2J1-1
-     i2R1-2
-     i2R4-2
-    }
-   }
-   ha:i2_unnamed_net5 {
-    li:conn {
-     i2R1-1
-     i2J2-2
-    }
-   }
-   ha:i2_unnamed_net6 {
-    li:conn {
-     i2R5-1
-     i2R6-3
-    }
-   }
-   ha:i3_unnamed_net9 {
-    li:conn {
-     i3U1-1
-     i3R4-1
-    }
-   }
-   ha:i3_unnamed_net10 {
-    li:conn {
-     i3J1-1
-     i3R1-2
-     i3R4-2
-    }
-   }
-   ha:i3_unnamed_net11 {
-    li:conn {
-     i3R1-1
-     i3J2-2
-    }
-   }
-   ha:i3_unnamed_net12 {
-    li:conn {
-     i3R5-1
-     i3R6-3
-    }
-   }
-    ha:i4_unnamed_net73 {
-    li:conn { i4U1-1; i4R4-1;    }
-    }
-    ha:i4_unnamed_net74 {
-    li:conn { i4J1-1; i4R1-2; i4R4-2;    }
-    }
-    ha:i4_unnamed_net75 {
-    li:conn { i4R1-1; i4J2-2;    }
-    }
-    ha:i4_unnamed_net76 {
-    li:conn { i4R5-1; i4R6-3;    }
-    }
-    ha:i5_unnamed_net79 {
-    li:conn { i5U1-1; i5R4-1;    }
-    }
-    ha:i5_unnamed_net80 {
-    li:conn { i5J1-1; i5R1-2; i5R4-2;    }
-    }
-    ha:i5_unnamed_net81 {
-    li:conn { i5R1-1; i5J2-2;    }
-    }
-    ha:i5_unnamed_net82 {
-    li:conn { i5R5-1; i5R6-3;    }
-    }
-    ha:i6_unnamed_net61 {
-    li:conn { i6U1-1; i6R4-1;    }
-    }
-    ha:i6_unnamed_net62 {
-    li:conn { i6J1-1; i6R1-2; i6R4-2;    }
-    }
-    ha:i6_unnamed_net63 {
-    li:conn { i6R1-1; i6J2-2;    }
-    }
-    ha:i6_unnamed_net64 {
-    li:conn { i6R5-1; i6R6-3;    }
-    }
-    ha:i7_unnamed_net67 {
-    li:conn { i7U1-1; i7R4-1;    }
-    }
-    ha:i7_unnamed_net68 {
-    li:conn { i7J1-1; i7R1-2; i7R4-2;    }
-    }
-    ha:i7_unnamed_net69 {
-    li:conn { i7R1-1; i7J2-2;    }
-    }
-    ha:i7_unnamed_net70 {
-    li:conn { i7R5-1; i7R6-3;    }
-    }
-    ha:i8_unnamed_net17 {
-    li:conn { i8J9-1; i8R9-3;    }
-    }
-    ha:i8_unnamed_net18 {
-    li:conn { i8U1-2; i8R2-1;    }
-    }
-    ha:i8_unnamed_net19 {
-    li:conn { i8U1-1; i8R2-2; i8R4-1;    }
-    }
-    ha:i8_unnamed_net20 {
-    li:conn { i8R1-2; i8U1-3;    }
-    }
-    ha:i8_unnamed_net21 {
-    li:conn { i8J3-1; i8R3-2;    }
-    }
-   ha:i8_unnamed_net22 {
-    li:conn {
-     i8U1-5
-     i8R5-2
-    }
-   }
-   ha:i8_unnamed_net23 {
-    li:conn {
-     i8U1-7
-     i8R6-2
- i8R8-1;    }
-   }
-   ha:i8_unnamed_net24 {
-    li:conn {
-     i8U1-6
-     i8R6-1
-    }
-   }
-   ha:i8_unnamed_net25 {
-    li:conn {
-     i8J7-1
-     i8R7-2
-    }
-   }
-   ha:i8_Vref {
-    li:conn {
-     i8R1-1
-     i8R5-1
-     i8R9-2
-    }
-   }
-    ha:i9_unnamed_net38 {
-    li:conn { i9J9-1; i9R9-3;    }
-    }
-    ha:i9_unnamed_net39 {
-    li:conn { i9U1-2; i9R2-1;    }
-    }
-    ha:i9_unnamed_net40 {
-    li:conn { i9U1-1; i9R2-2; i9R4-1;    }
-    }
-    ha:i9_unnamed_net41 {
-    li:conn { i9R1-2; i9U1-3;    }
-    }
-    ha:i9_unnamed_net42 {
-    li:conn { i9J3-1; i9R3-2;    }
-    }
-    ha:i9_unnamed_net43 {
-    li:conn { i9U1-5; i9R5-2;    }
-    }
-    ha:i9_unnamed_net44 {
-    li:conn { i9U1-7; i9R6-2; i9R8-1;    }
-    }
-    ha:i9_unnamed_net45 {
-    li:conn { i9U1-6; i9R6-1;    }
-    }
-    ha:i9_unnamed_net46 {
-    li:conn { i9J7-1; i9R7-2;    }
-    }
-   ha:i9_Vref {
-    li:conn {
-     i9R1-1
-     i9R5-1
-     i9R9-2
-    }
-   }
-    ha:in0 {
-    li:conn { i0Z1-1; i0C1-2; i0U1-4; i0R5-2; U1-10;    }
-    }
-    ha:in1 {
-    li:conn { i1Z1-1; i1C1-2; i1U1-4; i1R5-2; U1-11;    }
-    }
-    ha:in2 {
-    li:conn { i2Z1-1; i2C1-2; i2U1-4; i2R5-2; U1-12;    }
-    }
-    ha:in3 {
-    li:conn { i3Z1-1; i3C1-2; i3U1-4; i3R5-2; U1-13;    }
-    }
-    ha:in4 {
-    li:conn { i4Z1-1; i4C1-2; i4U1-4; i4R5-2; U1-14;    }
-    }
-    ha:in5 {
-    li:conn { i5Z1-1; i5C1-2; i5U1-4; i5R5-2; U1-15;    }
-    }
-    ha:in6 {
-    li:conn { i6Z1-1; i6C1-2; i6U1-4; i6R5-2; U1-16;    }
-    }
-    ha:in7 {
-    li:conn { i7Z1-1; i7C1-2; i7U1-4; i7R5-2; U1-17;    }
-    }
-    ha:in8a {
-    li:conn { i8Z1-1; i8C1-1; i8R4-2; U1-8;    }
-    }
-    ha:in8b {
-    li:conn { i8Z2-1; i8C2-1; i8R8-2; U1-9;    }
-    }
-    ha:in9a {
-    li:conn { i9Z1-1; i9C1-1; i9R4-2; U1-7;    }
-    }
-    ha:in9b {
-    li:conn { i9Z2-1; i9C2-1; i9R8-2; U1-22;    }
-    }
-   ha:o0_ctrl_out2 {
-    li:conn {
-     o0Z1-1
-     o0R1-1
-     o0Q1-1
-     o0Q1.1-1
-     o0Q1.2-2
-     o0U1-4
-    }
-   }
-    ha:o0_unnamed_net30 {
-    li:conn { o0U1-1; o0R3-1;    }
-    }
-   ha:o1_ctrl_out2 {
-    li:conn {
-     o1Z1-1
-     o1R1-1
-     o1Q1-1
-     o1Q1.1-1
-     o1Q1.2-2
-     o1U1-4
-    }
-   }
-    ha:o1_unnamed_net31 {
-    li:conn { o1U1-1; o1R3-1;    }
-    }
-   ha:o2_ctrl_out2 {
-    li:conn {
-     o2Z1-1
-     o2R1-1
-     o2Q1-1
-     o2Q1.1-1
-     o2Q1.2-2
-     o2U1-4
-    }
-   }
-    ha:o2_unnamed_net32 {
-    li:conn { o2U1-1; o2R3-1;    }
-    }
-   ha:o3_ctrl_out2 {
-    li:conn {
-     o3Z1-1
-     o3R1-1
-     o3Q1-1
-     o3Q1.1-1
-     o3Q1.2-2
-     o3U1-4
-    }
-   }
-    ha:o3_unnamed_net33 {
-    li:conn { o3U1-1; o3R3-1;    }
-    }
-   ha:OneWire {
-    li:conn {
-     F7-2
-     ONE_WIRE-4
-    }
-   }
-     ha:out0 {
-     li:conn { o0R3-2; U1-18;     }
-     }
-     ha:out1 {
-     li:conn { o1R3-2; U1-30;     }
-     }
-     ha:out2 {
-     li:conn { o2R3-2; U1-29;     }
-     }
-     ha:out3 {
-     li:conn { o3R3-2; U1-27;     }
-     }
-    ha:PWR {
-    li:conn { C51-2; C61-2; F1-1; R21-1; U1-34; U5-8; U6-8;    }
-    }
-   ha:RS485_A {
-    li:conn {
-     BUS_CONN-3
-     U1-38
-    }
-   }
-   ha:RS485_B {
-    li:conn {
-     BUS_CONN-4
-     U1-39
-    }
-   }
-   ha:unnamed_net1 {
-    li:conn {
-     DIx2_1-3
-     i2J1-2
-     i2R1-3
-    }
-   }
-   ha:unnamed_net2 {
-    li:conn {
-     DIx2_1-4
-     i2U1-2
-     i2J2-1
-    }
-   }
-   ha:unnamed_net7 {
-    li:conn {
-     DIx2_1-1
-     i3J1-2
-     i3R1-3
-    }
-   }
-   ha:unnamed_net8 {
-    li:conn {
-     DIx2_1-2
-     i3U1-2
-     i3J2-1
-    }
-   }
-   ha:unnamed_net13 {
-    li:conn {
-     AIx2_1-1
-     i8R6-3
-     i8R7-1
-    }
-   }
-   ha:unnamed_net14 {
-    li:conn {
-     AIx2_1-2
-     i8R5-3
-     i8J7-2
-    }
-   }
-   ha:unnamed_net15 {
-    li:conn {
-     AIx2_1-4
-     i8R2-3
-     i8R3-1
-    }
-   }
-   ha:unnamed_net16 {
-    li:conn {
-     AIx2_1-3
-     i8R1-3
-     i8J3-2
-    }
-   }
-    ha:unnamed_net26 {
-    li:conn { DOx4-4; o0D1-1; o0Q1.1-2; o0Q1-2; o0Q1.2-1; o0D2-2;    }
-    }
-    ha:unnamed_net27 {
-    li:conn { DOx4-3; o1D1-1; o1Q1.1-2; o1Q1-2; o1Q1.2-1; o1D2-2;    }
-    }
-    ha:unnamed_net28 {
-    li:conn { DOx4-2; o2D1-1; o2Q1.1-2; o2Q1-2; o2Q1.2-1; o2D2-2;    }
-    }
-    ha:unnamed_net29 {
-    li:conn { DOx4-1; o3D1-1; o3Q1.1-2; o3Q1-2; o3Q1.2-1; o3D2-2;    }
-    }
-   ha:unnamed_net34 {
-    li:conn {
-     AIx2_2-1
-     i9R6-3
- i9R7-1;    }
-   }
-   ha:unnamed_net35 {
-    li:conn {
-     AIx2_2-2
-     i9R5-3
-     i9J7-2
-    }
-   }
-   ha:unnamed_net36 {
-    li:conn {
-     AIx2_2-4
-     i9R2-3
-     i9R3-1
-    }
-   }
-   ha:unnamed_net37 {
-    li:conn {
-     AIx2_2-3
-     i9R1-3
-     i9J3-2
-    }
-   }
-    ha:unnamed_net47 {
-    li:conn { DIx2_0-3; i0J1-2; i0R1-3;    }
-    }
-    ha:unnamed_net48 {
-    li:conn { DIx2_0-4; i0U1-2; i0J2-1;    }
-    }
-    ha:unnamed_net53 {
-    li:conn { DIx2_0-1; i1J1-2; i1R1-3;    }
-    }
-    ha:unnamed_net54 {
-    li:conn { DIx2_0-2; i1U1-2; i1J2-1;    }
-    }
-    ha:unnamed_net59 {
-    li:conn { DIx2_3-3; i6J1-2; i6R1-3;    }
-    }
-    ha:unnamed_net60 {
-    li:conn { DIx2_3-4; i6U1-2; i6J2-1;    }
-    }
-    ha:unnamed_net65 {
-    li:conn { DIx2_3-1; i7J1-2; i7R1-3;    }
-    }
-    ha:unnamed_net66 {
-    li:conn { DIx2_3-2; i7U1-2; i7J2-1;    }
-    }
-    ha:unnamed_net71 {
-    li:conn { DIx2_2-3; i4J1-2; i4R1-3;    }
-    }
-    ha:unnamed_net72 {
-    li:conn { DIx2_2-4; i4U1-2; i4J2-1;    }
-    }
-    ha:unnamed_net77 {
-    li:conn { DIx2_2-1; i5J1-2; i5R1-3;    }
-    }
-    ha:unnamed_net78 {
-    li:conn { DIx2_2-2; i5U1-2; i5J2-1;    }
-    }
-    ha:unnamed_net83 {
-    li:conn { BUS_CONN-2; F1-2;    }
-    }
-    ha:unnamed_net84 {
-    li:conn { U5-6; U5-7;    }
-    }
-    ha:unnamed_net85 {
-    li:conn { R61-1; U6-6; U6-7;    }
-    }
-    ha:USART2_TX {
-    li:conn { F7-1; R7-2; U1-25; Z7-1;    }
-    }
-   ha:Vcc_DO {
-    li:conn {
-     DOx4-5
-     o0R1-2
-     o0D2-1
-     o1R1-2
-     o1D2-1
-     o2R1-2
-     o2D2-1
-     o3R1-2
-     o3D2-1
-    }
-   }
-  }
- }
  ha:meta {
   ha:size {
    thermal_scale = 0.500000
@@ -652,7 +8,7 @@ ha:pcb-rnd-board-v4 {
   }
   board_name = Modbus IO Expander
   ha:cursor {
-   zoom = 40.000000
+   zoom = 0.000000
    x = 0.0
    y = 0.0
   }
@@ -4880,25 +4236,25 @@ ha:pcb-rnd-board-v4 {
    hole = 15.0mil
    clearance = 20.0mil
   }
-  {ha:Signal B}                                                                                                                                                                                  {
+  {ha:Signal B}                                                                                                                                                                                     {
    diameter = 64.0mil
    thickness = 8.0mil
    hole = 31.5mil
    clearance = 12.0mil
   }
-  {ha:Power ~1.5A}                                                                                                                                                                                  {
+  {ha:Power ~1.5A}                                                                                                                                                                                     {
    diameter = 2.2mm
    thickness = 20.0mil
    hole = 1.0mm
    clearance = 20.0mil
   }
-  {ha:Strong Power}                                                                                                                                                                                  {
+  {ha:Strong Power}                                                                                                                                                                                     {
    diameter = 137.8mil
    thickness = 50.0mil
    hole = 47.24mil
    clearance = 25.0mil
   }
-  {ha:Extra strong Power}                                                                                                                                                                                                                                                                                                                                                                   {
+  {ha:Extra strong Power}                                                                                                                                                                                                                                                                                                                                                                         {
    diameter = 137.8mil
    thickness = 90.0mil
    hole = 47.24mil
@@ -4952,20 +4308,24 @@ ha:pcb-rnd-board-v4 {
     }
    }
    ha:design {
-    min_ring = 8.00 mil
-    clearance = 20.00 mil
+    min_ring = 8.0mil
+    clearance = 25.00 mil
     via_thickness = 32.00 mil
     via_drilling_hole = 15.00 mil
-    min_slk = 6.00 mil
+    min_slk = 6.0mil
     max_height = 4.00000 in
-    line_thickness = 10.00 mil
-    shrink = 8.00 mil
+    line_thickness = 90.00 mil
+    shrink = 8.0mil
     poly_isle_area = 200000000.000000
     max_width = 1300.00 mil
-    min_wid = 8.00 mil
-    bloat = 7.80 mil
+    min_wid = 8.0mil
+    bloat = 0.19812mm
     routes = {Signal,1000,3000,1500,2000Signal B,800,6400,3150,1200:Power ~1.5A,2000,8661,3937,2000:Strong Power,5000,13780,4724,2500:}
-    min_drill = 15.00 mil
+    min_drill = 15.0mil
+     text_font_id = 0
+      via_proto = 4
+      text_scale = 100
+      text_thickness = 0
    }
    ha:editor {
     wireframe_draw = false
@@ -4973,7 +4333,7 @@ ha:pcb-rnd-board-v4 {
     draw_grid = true
     grid = 5.00 mil
     line_refraction = 2
-    auto_drc = true
+    auto_drc = false
     buffer_number = 4
     local_ref = false
     hide_names = false
@@ -4987,11 +4347,18 @@ ha:pcb-rnd-board-v4 {
     }
     show_solder_side = 0
     fullscreen = 0
+     grids_idx = 2
    }
    ha:plugins {
     ha:mincut {
      enable = false
     }
+     ha:import_sch {
+      li:args {
+       ./board_12in_4out.sch  
+      }
+      import_fmt = gnetlist
+     }
    }
   }
  }
@@ -5197,6 +4564,42 @@ ha:pcb-rnd-board-v4 {
     hbottom = 0
     hplated = 1
    }
+
+    ha:ps_proto_v4.4 {
+      hdia=47.24mil; hplated=1; htop=0; hbottom=0;
+      li:shape {
+
+        ha:ps_shape_v4 {
+         ha:ps_circ { x=0.0; y=0.0; dia=137.8mil;         }
+         ha:combining {         }
+         ha:layer_mask {
+          copper = 1
+          top = 1
+         }
+         clearance=0.0
+        }
+
+        ha:ps_shape_v4 {
+         ha:ps_circ { x=0.0; y=0.0; dia=137.8mil;         }
+         ha:combining {         }
+         ha:layer_mask {
+          bottom = 1
+          copper = 1
+         }
+         clearance=0.0
+        }
+
+        ha:ps_shape_v4 {
+         ha:ps_circ { x=0.0; y=0.0; dia=137.8mil;         }
+         ha:combining {         }
+         ha:layer_mask {
+          copper = 1
+          intern = 1
+         }
+         clearance=0.0
+        }
+      }
+    }
   }
   li:objects {
    ha:padstack_ref.3247862 {
@@ -46463,12 +45866,6 @@ ha:pcb-rnd-board-v4 {
        clearline=1
       }
      }
-     ha:line.2634376 {
-      x1=2.31in; y1=1.02in; x2=2.25in; y2=1.08in; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
      ha:line.2634430 {
       x1=60.452mm; y1=1.505in; x2=2.305in; y2=36.322mm; thickness=10.0mil; clearance=40.0mil;
       ha:flags {
@@ -46476,19 +45873,7 @@ ha:pcb-rnd-board-v4 {
       }
      }
      ha:line.2640571 {
-      x1=57.785mm; y1=30.226mm; x2=57.785mm; y2=36.322mm; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
-     ha:line.2640574 {
-      x1=57.785mm; y1=30.226mm; x2=2.25in; y2=29.591mm; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
-     ha:line.2640577 {
-      x1=2.25in; y1=29.591mm; x2=2.25in; y2=1.08in; thickness=10.0mil; clearance=40.0mil;
+      x1=57.785mm; y1=1.12in; x2=57.785mm; y2=36.322mm; thickness=10.0mil; clearance=40.0mil;
       ha:flags {
        clearline=1
       }
@@ -48427,6 +47812,18 @@ ha:pcb-rnd-board-v4 {
       }
       clearance = 40.0mil
      }
+     ha:text.3276747 {
+      string=DO NOT USE; x=150.0mil; y=995.0mil; scale=100; fid=0; direction=0;
+      ha:flags {
+       clearline=1
+      }
+     }
+     ha:text.3276748 {
+      string=BAD OPAMP CONNECTIONS; x=145.0mil; y=1.11in; scale=100; fid=0; direction=0;
+      ha:flags {
+       clearline=1
+      }
+     }
     }
     group = 3
     ha:combining {
@@ -49432,12 +48829,6 @@ ha:pcb-rnd-board-v4 {
        clearline=1
       }
      }
-     ha:line.2634307 {
-      x1=69.977mm; y1=28.829mm; x2=69.977mm; y2=1.435in; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
      ha:line.2634310 {
       x1=69.342001mm; y1=1.255in; x2=67.818mm; y2=30.352999mm; thickness=10.0mil; clearance=40.0mil;
       ha:flags {
@@ -49558,18 +48949,6 @@ ha:pcb-rnd-board-v4 {
        clearline=1
       }
      }
-     ha:line.2634379 {
-      x1=2.31in; y1=1.12in; x2=2.31in; y2=33.909mm; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
-     ha:line.2634382 {
-      x1=2.8in; y1=1.08in; x2=2.8in; y2=36.957mm; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
      ha:line.2634385 {
       x1=2.8in; y1=1.08in; x2=2.74in; y2=1.02in; thickness=10.0mil; clearance=40.0mil;
       ha:flags {
@@ -49661,7 +49040,7 @@ ha:pcb-rnd-board-v4 {
       }
      }
      ha:line.2634433 {
-      x1=60.452mm; y1=1.405in; x2=2.31in; y2=33.909mm; thickness=10.0mil; clearance=40.0mil;
+      x1=60.452mm; y1=1.405in; x2=2.305in; y2=1.33in; thickness=10.0mil; clearance=40.0mil;
       ha:flags {
        clearline=1
       }
@@ -49704,12 +49083,6 @@ ha:pcb-rnd-board-v4 {
      }
      ha:line.2642915 {
       x1=3.37in; y1=1.12in; x2=3.385in; y2=28.829mm; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
-     ha:line.2642918 {
-      x1=3.385in; y1=28.829mm; x2=3.385in; y2=1.435in; thickness=10.0mil; clearance=40.0mil;
       ha:flags {
        clearline=1
       }
@@ -49836,24 +49209,6 @@ ha:pcb-rnd-board-v4 {
      }
      ha:line.2642987 {
       x1=2.94in; y1=1.02in; x2=73.152mm; y2=1.08in; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
-     ha:line.2642990 {
-      x1=73.152mm; y1=1.08in; x2=73.152mm; y2=1.465in; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
-     ha:line.2642993 {
-      x1=2.94in; y1=1.12in; x2=2.94in; y2=33.909mm; thickness=10.0mil; clearance=40.0mil;
-      ha:flags {
-       clearline=1
-      }
-     }
-     ha:line.2642996 {
-      x1=3.43in; y1=1.08in; x2=3.43in; y2=36.957mm; thickness=10.0mil; clearance=40.0mil;
       ha:flags {
        clearline=1
       }
@@ -51034,6 +50389,36 @@ ha:pcb-rnd-board-v4 {
        clearline=1
       }
      }
+     ha:line.3271655 {
+      x1=2.305in; y1=1.33in; x2=2.305in; y2=1.225in; thickness=10.0mil; clearance=40.0mil;
+      ha:flags {
+       clearline=1
+      }
+     }
+     ha:line.3271658 {
+      x1=2.305in; y1=1.225in; x2=60.452mm; y2=29.21mm; thickness=10.0mil; clearance=40.0mil;
+      ha:flags {
+       clearline=1
+      }
+     }
+     ha:line.3271661 {
+      x1=60.452mm; y1=29.21mm; x2=60.452mm; y2=1.06in; thickness=10.0mil; clearance=40.0mil;
+      ha:flags {
+       clearline=1
+      }
+     }
+     ha:line.3271664 {
+      x1=60.452mm; y1=1.06in; x2=59.436mm; y2=1.02in; thickness=10.0mil; clearance=40.0mil;
+      ha:flags {
+       clearline=1
+      }
+     }
+     ha:line.3271667 {
+      x1=59.436mm; y1=1.02in; x2=2.31in; y2=1.02in; thickness=10.0mil; clearance=40.0mil;
+      ha:flags {
+       clearline=1
+      }
+     }
     }
     group = 6
     ha:combining {
@@ -51175,10 +50560,22 @@ ha:pcb-rnd-board-v4 {
       }
       y1 = 315.0mil
      }
+     ha:line.3271670 {
+      x1=54.61mm; y1=1.78in; x2=3.52in; y2=410.0mil; thickness=90.0mil; clearance=50.0mil;
+      ha:flags {
+       clearline=1
+      }
+     }
+     ha:line.3271682 {
+      x1=3.56in; y1=1.79in; x2=55.626mm; y2=420.0mil; thickness=90.0mil; clearance=50.0mil;
+      ha:flags {
+       clearline=1
+      }
+     }
     }
     group = 5
     ha:combining {
-    }
+ auto=1;    }
    }
    ha:bottom-silk {
     lid = 3
